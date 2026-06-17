@@ -1,0 +1,27 @@
+$date
+	Thu Jun 11 22:28:37 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module counter_tb $end
+$var integer 32 ! counter [31:0] $end
+$scope module dut $end
+$var wire 32 " counter [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 "
+b0 !
+$end
+#10
+b101 !
+b101 "

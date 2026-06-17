@@ -1,0 +1,50 @@
+$date
+	Tue Jun 16 21:37:42 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module loop $end
+$var reg 1 ! clk $end
+$var integer 32 " i [31:0] $end
+$scope begin $ivl_foreach0 $end
+$var integer 32 # i [31:0] $end
+$upscope $end
+$scope begin $ivl_foreach1 $end
+$var integer 32 $ i [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b111 $
+b111 #
+b0 "
+0!
+$end
+#5
+1!
+#10
+0!
+#15
+1!
+#20
+0!
+#25
+1!
+#30
+0!
+#35
+1!
+#40
+0!
+#45
+1!
+#50
+0!

@@ -1,0 +1,40 @@
+$date
+	Thu Jun 11 22:30:44 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module data_type_tb $end
+$var reg 1 ! a $end
+$var reg 1 " b $end
+$var reg 8 # c [7:0] $end
+$var integer 32 $ d [31:0] $end
+$var integer 32 % e [31:0] $end
+$scope module dut $end
+$var wire 1 ! a $end
+$var wire 1 " b $end
+$var wire 8 & c [7:0] $end
+$var wire 32 ' d [31:0] $end
+$var wire 32 ( e [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b10011100010000 (
+b1111101000 '
+b1010 &
+b10011100010000 %
+b1111101000 $
+b1010 #
+1"
+z!
+$end
+#10
+x!

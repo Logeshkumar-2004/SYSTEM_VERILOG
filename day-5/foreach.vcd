@@ -1,0 +1,70 @@
+$date
+	Sat Jun 13 16:39:19 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module for_each_tb $end
+$var integer 32 ! i [31:0] $end
+$scope module dut $end
+$upscope $end
+$scope begin $ivl_foreach0 $end
+$var integer 32 " i [31:0] $end
+$upscope $end
+$scope begin $ivl_foreach1 $end
+$var integer 32 # i [31:0] $end
+$upscope $end
+$scope begin $ivl_foreach2 $end
+$var integer 32 $ i [31:0] $end
+$upscope $end
+$scope begin $ivl_foreach3 $end
+$var integer 32 % i [31:0] $end
+$upscope $end
+$scope begin $ivl_foreach4 $end
+$var integer 32 & i [31:0] $end
+$upscope $end
+$scope begin $ivl_foreach5 $end
+$var integer 32 ' i [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 '
+b0 &
+b0 %
+b0 $
+b101 #
+b101 "
+bx !
+$end
+#10
+b1 $
+#20
+b10 $
+#30
+b11 $
+#40
+b100 $
+#50
+b0 !
+b101 &
+b101 %
+b101 $
+#60
+b1 !
+#70
+b10 !
+#80
+b11 !
+#90
+b100 !
+#100
+b101 '
+b101 !

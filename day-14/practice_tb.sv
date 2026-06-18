@@ -1,24 +1,29 @@
-
+// Code your testbench here
+// or browse Examples
 module task_tb;
 
 int task_1[] ='{10,20,30,40,50};
 int q[$];
+  integer i;
+  int arr[$];
+  int max[$];
+  int min[$];
 typedef struct{
     int id = 015;
     int salary = 50000;
 
-}employee_t
+}employee_t;
 
 employee_t emp;
 
-typedef union{
+typedef union packed{
     int value_1;
     int value_2;
     int value_3;
 
 }uniontb_t;
 
-uniontb_t value;
+uniontb_t mark;
 
 initial begin
 
@@ -39,8 +44,10 @@ Max()
 */
 
     $display("---------- task-1 --------------");
-    $display("maximum value in task_1 arr = %0d",task_1.mix());
-    $display("minimum value inn task_2 arr = %0d",task_1.min());
+  max=task_1.max();
+  min=task_1.min();
+    $display("maximum value in task_1 arr = %0d",max[0]);
+  $display("minimum value inn task_2 arr = %0d",min[0]);
     
 /*
 Task 2
@@ -78,9 +85,10 @@ Print matching values.
 */
 
     $display("-------------- task-3 -----------");
-    foreach(task_1[i])begin
-        task_1[i]= find(x) with (x > 25);
-        $display("find(x) with (x > 25) = %0d",task_1[i]);
+  arr= task_1. find(x) with (x > 25);
+  foreach(arr[i])begin
+      
+      $display("find(x) with (x > 25) = %0d",arr[i]);
         
     end
 
@@ -120,10 +128,10 @@ Observe memory sharing.
 */
 
 $display("----------- task-5 -----------");
-mark.value_1 = 8'haa;
-$display("value_1 = %0d",mark.value_1);
-$display("value_2 = %0d",mark.value_2);
-$display("value_3 = %0d",mark.value_3);
+mark.value_1 = 32'haabbccdd;
+  $display("value_1 = %0h",mark.value_1);
+  $display("value_2 = %0h",mark.value_2);
+  $display("value_3 = %0h",mark.value_3);
 
 
 
